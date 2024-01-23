@@ -1,0 +1,19 @@
+#Dirección
+cd .\OneDrive\Documentos\Proyectos_Django\actividad2bim\miproyecto
+
+# Código a ingresar a través del Shell de Django
+
+# Primero, se importa las clases del modelo
+
+from administrativo.models import Docente, Materia
+
+# Inserción de datos
+
+d1 = Docente(cedula="1717171717",nombres="Lorena",apellido="Vernaza",titulo="Magister")
+d2 = Docente(cedula="1701171717",nombres="Miguel",apellido="Cantos",titulo="PhD")
+d3 = Docente(cedula="1801171823",nombres="Angie",apellido="Moreno",titulo="Ingeniero")
+
+d1.save()
+d2.save()
+d3.save()
+
